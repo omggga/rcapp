@@ -1,12 +1,14 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import Container from '@material-ui/core/Container'
 
-function App() {
-	return (
-		<div className="App">
-			<header className="App-header">12345</header>
-		</div>
-	);
-}
+import Header from './header'
 
-export default App;
+
+import './App.css'
+
+const App = () => (
+	<Container maxWidth="md">
+		<Header />
+	</Container>
+)
+export default App
