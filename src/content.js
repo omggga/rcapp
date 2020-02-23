@@ -15,14 +15,14 @@ class Container extends Component {
 		this.dataitems = []
 		this.state = { error: null,
 			isLoaded: false,
-			items: this.data.slice(this.page*20, this.page*20+20)
+			items: this.data.slice(this.page*40, this.page*40+40)
 		}
 	}
 
 	fetchMoreData = () => {
 		this.page++
 		this.setState({
-			items: this.state.items.concat(this.data.slice(this.page*20, this.page*20+20))
+			items: this.state.items.concat(this.data.slice(this.page*40, this.page*40+40))
 		})
 	}
 
