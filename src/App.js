@@ -7,7 +7,7 @@ import Header from './header'
 import './App.css'
 
 const App = () => (
-	<Container maxWidth="md">
+	<Container maxWidth="lg">
 		<Header />
 	</Container>
 )
