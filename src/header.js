@@ -12,7 +12,7 @@ import SearchButton from './search'
 function Header() {
 
 	return (
-		<AppBar size="medium" position="static" color="inherit" style={{ margin: 20 }}>
+		<AppBar size="medium" position="static" color="inherit" style={{ marginTop: 20, marginBottom: 20 }}>
 			<Box style={{ height: 90, backgroundColor: '#65c8d0', padding: 0 }} display="flex" flexDirection="row">
 				<Box style={{ marginTop: 19, marginLeft: 20, marginRight: 30 }}>
 					<CountrySelect />

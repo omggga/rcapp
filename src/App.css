@@ -20,3 +20,49 @@
 	padding-left: 40px;
 	padding-right: 40px;
 }
+
+.infinite-scroll-component  {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+.infinite-scroll-component  .MuiGrid-item {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 12px;
+}
+
+.travelCard {
+	padding: 20px;
+}
+
+.travelCard .where{
+	font-size: 15px;
+	color: #0f0371;
+	font-weight: bold;
+}
+
+.travelCard .price{
+	font-size: 25px;
+	color: #0f0371;
+	font-weight: bold;
+}
+
+.travelCard button {
+	float: right;
+}
+
+.hotellink {
+	text-decoration: none;
+	color: #f50057c7;
+}
+
+.stars {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.stars i {
+	font-style: normal;
+}
