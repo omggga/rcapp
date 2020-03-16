@@ -7,13 +7,15 @@ import Button from '@material-ui/core/Button'
 import { jsonData } from "./data.js"
 
 class Container extends Component {
+
 	constructor(props){
 		super(props)
 
-		this.data = jsonData.data.splice(0, 1000)
+		this.data = jsonData.data.splice(0, 185)
 		this.page = 0
 		this.dataitems = []
-		this.state = { error: null,
+		this.state = {
+			error: null,
 			isLoaded: false,
 			items: this.data.slice(this.page*40, this.page*40+40)
 		}
@@ -27,17 +29,12 @@ class Container extends Component {
 	}
 
 	componentDidMount() {
-		console.log(this.data)
-		/*fetch('http://5.181.109.26:8080/cheapest', {
+		fetch('http://norussia.ru:8080/cheapest/Москва', {
 			method: 'GET',
-			mode: 'cors',
-			cache: 'no-cache',
-			credentials: 'same-origin',
+			mode: 'no-cors',
 			headers: {
-				'Content-Type': 'application/json',
-			},
-			redirect: 'follow',
-			referrer: 'no-referrer'
+				'Content-Type': 'application/json'
+			}
 		})
 		.then((response) => response.json())
 		.then((response) => {
@@ -47,7 +44,7 @@ class Container extends Component {
 		.then((error) => {
 			this.setState({false: true})
 			this.setState({error})
-		})*/
+		})
 	}
 
 	render (){
